@@ -26,6 +26,8 @@ spec:
           args:
             - "--port=8080"
           env:
+            - name: APP_SECURE_COOKIES
+              value: "false"
             - name: KATIB_CORE_NAMESPACE
               valueFrom:
                 fieldRef:

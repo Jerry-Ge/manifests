@@ -30,6 +30,8 @@ spec:
         - containerPort: 8082
           protocol: TCP
         env:
+        - name: APP_SECURE_COOKIES
+          value: "false"
         - name: USERID_HEADER
           value: $(CD_USERID_HEADER)
         - name: USERID_PREFIX

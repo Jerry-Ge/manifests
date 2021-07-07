@@ -20,6 +20,8 @@ spec:
         - mountPath: /src/apps/default/static/assets/logos
           name: logos-volume
         env:
+        - name: APP_SECURE_COOKIES
+          value: "false"
         - name: APP_PREFIX
           value: $(JWA_PREFIX)
         - name: UI

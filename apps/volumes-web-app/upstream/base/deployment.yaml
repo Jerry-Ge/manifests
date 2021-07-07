@@ -15,6 +15,8 @@ spec:
         ports:
         - containerPort: 5000
         env:
+        - name: APP_SECURE_COOKIES
+          value: "false"
         - name: APP_PREFIX
           value: $(VWA_PREFIX)
         - name: USERID_HEADER
