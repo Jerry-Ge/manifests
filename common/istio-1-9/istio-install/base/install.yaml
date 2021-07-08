@@ -2013,7 +2013,7 @@ spec:
               - key: kubernetes.io/arch
                 operator: In
                 values:
-                - amd64
+                - arm64
             weight: 2
           - preference:
               matchExpressions:
@@ -2035,7 +2035,7 @@ spec:
               - key: kubernetes.io/arch
                 operator: In
                 values:
-                - amd64
+                - arm64
                 - ppc64le
                 - s390x
       containers:
@@ -2103,7 +2103,7 @@ spec:
           value: standard
         - name: ISTIO_META_CLUSTER_ID
           value: Kubernetes
-        image: docker.io/istio/proxyv2:1.9.6
+        image: docker.io/querycapistio/proxyv2:1.9.4
         name: istio-proxy
         ports:
         - containerPort: 15021
@@ -2298,7 +2298,7 @@ spec:
           value: Kubernetes
         - name: EXTERNAL_ISTIOD
           value: "false"
-        image: docker.io/istio/pilot:1.9.6
+        image: docker.io/yuzhouge/pilot:1.9.0
         name: discovery
         ports:
         - containerPort: 8080
