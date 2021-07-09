@@ -16,8 +16,13 @@ spec:
     spec:
       serviceAccountName: dex
       containers:
-      - image: quay.io/dexidp/dex:v2.22.0
+      - image: docker.io/dexidp/dex:v2.26.0
         name: dex
+        env:
+        - name: KUBERNETES_POD_NAMESPACE
+          valueFrom:
+           fieldRef:
+             fieldPath: metadata.namespace
         command: ["dex", "serve", "/etc/dex/cfg/config.yaml"]
         ports:
         - name: http
