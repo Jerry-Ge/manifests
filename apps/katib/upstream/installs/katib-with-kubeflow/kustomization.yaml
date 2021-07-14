@@ -7,15 +7,15 @@ resources:
   - kubeflow-katib-roles.yaml
   - ui-virtual-service.yaml
 images:
-  - name: docker.io/kubeflowkatib/katib-controller
-    newName: docker.io/kubeflowkatib/katib-controller
-    newTag: v0.11.1
-  - name: docker.io/kubeflowkatib/katib-db-manager
-    newName: docker.io/kubeflowkatib/katib-db-manager
-    newTag: v0.11.1
-  - name: docker.io/kubeflowkatib/katib-ui
-    newName: docker.io/kubeflowkatib/katib-ui
-    newTag: v0.11.1
+  - name: docker.io/pkskubeflow/katib-controller:v0.9.0
+    newName: docker.io/pkskubeflow/katib-controller
+    newTag: v0.9.0
+  - name: docker.io/pkskubeflow/katib-db-manager:v0.9.0
+    newName: docker.io/pkskubeflow/katib-db-manager
+    newTag: v0.9.0
+  - name: docker.io/yuzhouge/katib-ui:latest
+    newName: docker.io/yuzhouge/katib-ui
+    newTag: latest
 
 patchesStrategicMerge:
   - patches/remove-resources-patch.yaml
