@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: jupyter-web-app
-        image: public.ecr.aws/j1r0q0g6/notebooks/jupyter-web-app
+        image: pkskubeflow/jupyter-web-app:v1.0.0-g2bd63238
         ports:
         - containerPort: 5000
         volumeMounts:
