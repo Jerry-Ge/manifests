@@ -16,9 +16,9 @@ commonLabels:
   app.kubernetes.io/component: centraldashboard
   app.kubernetes.io/name: centraldashboard
 images:
-- name: public.ecr.aws/j1r0q0g6/notebooks/central-dashboard
-  newName: public.ecr.aws/j1r0q0g6/notebooks/central-dashboard
-  newTag: v1.3.1-rc.0
+- name: yuzhouge/central-dashboard:latest
+  newName: yuzhouge/central-dashboard
+  newTag: latest
 configMapGenerator:
 - envs:
   - params.env
