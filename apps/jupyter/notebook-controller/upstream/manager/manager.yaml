@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: manager
-        image: public.ecr.aws/j1r0q0g6/notebooks/notebook-controller
+        image: yuzhouge/notebook-controller:latest
         command:
           - /manager
         env:
