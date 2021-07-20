@@ -24,6 +24,6 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.name
-        image: public.ecr.aws/j1r0q0g6/training/tf-operator
+        image: cestcai/tf-operator:latest
         name: tf-job-operator
       serviceAccountName: tf-job-operator
