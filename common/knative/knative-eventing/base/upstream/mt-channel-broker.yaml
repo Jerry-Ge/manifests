@@ -369,7 +369,7 @@ spec:
       containers:
         - name: mt-broker-controller
           terminationMessagePolicy: FallbackToLogsOnError
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/mtchannel_broker@sha256:28cbe7aed7e32f34aa124b02f73fe8fd620230d0102574eceee9e0780704690c
+          image: gcr.io/knative-releases/knative.dev/eventing/cmd/mtchannel_broker@sha256:d30c2e731f095cf10ac0d92f9137b79f856bb50cd5d588e64f2669662b741cd9
           resources:
             requests:
               cpu: 100m
