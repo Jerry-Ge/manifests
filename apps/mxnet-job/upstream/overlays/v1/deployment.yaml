@@ -7,7 +7,7 @@ spec:
     spec:
       containers:
       - name: mxnet-operator
-        image: kubeflow/mxnet-operator:v1.1.0
+        image: pkskubeflow/mxnet-operator:1.0.0
         command:
         - /opt/kubeflow/mxnet-operator.v1
 
