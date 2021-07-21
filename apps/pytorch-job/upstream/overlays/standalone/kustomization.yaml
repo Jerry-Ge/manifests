@@ -10,4 +10,4 @@ commonLabels:
   app.kubernetes.io/component: pytorch
   app.kubernetes.io/name: pytorch-operator
 images:
-- name: gcr.io/kubeflow-images-public/pytorch-operator
+- name: yuzhouge/pytorch-operator:latest
