@@ -1050,7 +1050,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: activator
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/activator@sha256:30ef117a15f681ee41358a542578e9bffd0e86254bb2f7c4471c35ce9275f117
+          image: gcr.io/knative-releases/knative.dev/serving/cmd/activator@sha256:bd48057f8d6e5f95f389225979c89d2d99d52a4876d2342fc033c909096d4698
           resources:
             requests:
               cpu: 300m
@@ -1164,7 +1164,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: autoscaler
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler@sha256:9738e05b78c7b892817d98475549f13c5b2ef67a8536d73a81c1e9e5d7fab773
+          image: gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler@sha256:d3d6f5ecfff577a6d4d5a0549379fa1acf1d66d7422a58b1756e40eba555285c
           resources:
             requests:
               cpu: 30m
@@ -1258,7 +1258,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: controller
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/controller@sha256:95bf38bc88a7446449ff57e4978267ae12b7b8d5d8f41389db716d01dcb59aa1
+          image: gcr.io/knative-releases/knative.dev/serving/cmd/controller@sha256:e9b9cc7a2a091194161a7a256d6fc342317080f1a31e1f1a33993a5e1993fdb5
           resources:
             requests:
               cpu: 100m
@@ -1337,7 +1337,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: webhook
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/webhook@sha256:5cd9592154b9a89faaebe1c65427b79ee64fce0951442ac5cb05212ea437bf46
+          image: gcr.io/knative-releases/knative.dev/serving/cmd/webhook@sha256:e9503135b4b46a3700d91bdb32df60923575aaedbcc5192bdc3e41b64591ee50
           resources:
             requests:
               cpu: 100m

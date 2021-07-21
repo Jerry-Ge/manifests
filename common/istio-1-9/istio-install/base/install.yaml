@@ -1048,7 +1048,7 @@ data:
     {
       "global": {
         "arch": {
-          "amd64": 2,
+          "arm64": 2,
           "ppc64le": 2,
           "s390x": 2
         },
@@ -1065,7 +1065,7 @@ data:
         },
         "enabled": true,
         "externalIstiod": false,
-        "hub": "docker.io/istio",
+        "hub": "docker.io/querycapistio",
         "imagePullPolicy": "",
         "imagePullSecrets": [],
         "istioNamespace": "istio-system",
@@ -2103,7 +2103,7 @@ spec:
           value: standard
         - name: ISTIO_META_CLUSTER_ID
           value: Kubernetes
-        image: docker.io/querycapistio/proxyv2:1.9.4
+        image: docker.io/querycapistio/proxyv2:1.9.6
         name: istio-proxy
         ports:
         - containerPort: 15021
@@ -2298,7 +2298,7 @@ spec:
           value: Kubernetes
         - name: EXTERNAL_ISTIOD
           value: "false"
-        image: docker.io/yuzhouge/pilot:1.9.0
+        image: docker.io/querycapistio/pilot:1.9.6
         name: discovery
         ports:
         - containerPort: 8080
